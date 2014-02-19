@@ -1,0 +1,43 @@
+/*
+* Fixes for height dockbar
+*/
+.dockbar img {
+    margin-bottom: 0;
+}
+
+/*
+* Fixes for background image dockbar
+*/
+.dockbar ul li {
+    background: none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+/*
+* Fixes for the search box
+*/
+.search {
+    position: absolute;
+    top: 1em;
+    right: 5em;
+    width: 20.5em;
+}
+
+/*
+* Fixes for the page background color, due aui.css overrides screen.css
+*/
+body {
+    background: #f3f5f6;
+}
+
+/*
+*Fixes for the service menu
+*/
+#global-container {
+    margin-top: 2.1em;
+}
+
+.func_links {
+    position: absolute;
+}

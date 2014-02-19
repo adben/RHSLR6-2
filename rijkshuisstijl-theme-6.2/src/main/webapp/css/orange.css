@@ -1,0 +1,191 @@
+/**
+ * orange.css
+ *
+ * Definition of all 16 available Rijksoverheid brand identity colors.
+ *
+ * @version			1.0.1
+ * @date			2009-08-28
+ * @lastmodified	2010-04-13 17:21
+ * @author			Studio Dumbar (Jonathan van Wunnik)
+ * @project			Starters Kit Rijksoverheid
+ * @link			http://www.website.com
+ * @cssdoc			version 1.0-pre
+ *
+ * @colordef		#623327; dark-brown 1 (full)		| 01
+ * @colordef		#d1c1be; dark-brown 2 (lighter)
+ * @colordef		#e8e1df; dark-brown 3 (lightest)
+ *
+ * @colordef		#42145f; purple 1 (full)			| 02
+ * @colordef		#c6b8cf; purple 2 (lighter)
+ * @colordef		#e3dce7; purple 3 (lightest)
+ *
+ * @colordef		#275937; dark-green 1 (full)		| 03
+ * @colordef		#becdc3; dark-green 2 (lighter)
+ * @colordef		#dfe6e1; dark-green 3 (lightest)
+ *
+ * @colordef		#ca005a; ruby (full)				| 04
+ * @colordef		#efb2ce; ruby (lighter)
+ * @colordef		#f7d9e7; ruby (lightest)
+ *
+ * @colordef		#d52b1e; red 1 (full)				| 05
+ * @colordef		#f2bfbb; red 2 (lighter)
+ * @colordef		#f9dfdd; red 3 (lightest)
+ *
+ * @colordef		#a90061; violet (full)				| 06
+ * @colordef		#e5b2cf; violet (lighter)
+ * @colordef		#f2d9e7; violet (lightest)
+ *
+ * @colordef		#777c00; moss-green 1 (full)		| 07
+ * @colordef		#d6d7b2; moss-green 2 (lighter)
+ * @colordef		#ebebd9; moss-green 3 (lightest)
+ *
+ * @colordef		#94710a; brown 1 (full)				| 08
+ * @colordef		#dfd4b5; brown 2 (lighter)
+ * @colordef		#efeada; brown 3 (lightest)
+ *
+ * @colordef		#39870c; green 1 (full)				| 09
+ * @colordef		#c3dbb6; green 2 (lighter)
+ * @colordef		#e1eddb; green 3 (lightest)
+ *
+ * @colordef		#007bc7; azure 1 (full)				| 10
+ * @colordef		#b2d7ee; azure 2 (lighter)
+ * @colordef		#d9ebf7; azure 3 (lightest)
+ *
+ * @colordef		#8fcae7; light-blue 1 (full)		| 11
+ * @colordef		#ddeff8; light-blue 2 (lighter)
+ * @colordef		#eef7fb; light-blue 3 (lightest)
+ *
+ * @colordef		#f092cd; pink 1 (full)				| 12
+ * @colordef		#fadef0; pink 2 (lighter)
+ * @colordef		#fdeff8; pink 3 (lightest)
+ *
+ * @colordef		#f9e11e; yellow 1 (full)			| 13
+ * @colordef		#fdf6bb; yellow 2 (lighter)
+ * @colordef		#fefbdd; yellow 3 (lightest)
+ *
+ * @colordef		#ffb612; dark-yellow 1 (full)		| 14
+ * @colordef		#ffe9b7; dark-yellow 2 (lighter)
+ * @colordef		#fff4dc; dark-yellow 3 (lightest)
+ *
+ * @colordef		#76d2b6; mint-green 1 (full)		| 15
+ * @colordef		#d6f1e9; mint-green 2 (lighter)
+ * @colordef		#ebf8f4; mint-green 3 (lightest)
+ *
+ * @colordef		#e17000; orange 1 (full)			| 16
+ * @colordef		#f6d4b2; orange 2 (lighter)
+ * @colordef		#fbead9; orange 3 (lightest)
+ *
+ */
+
+/* Colors 16 (orange) */
+.orange .title_bar { background: #fbead9; }
+.orange .nav_bar { background: #e17000; }
+.orange .nav_main a { color: #000; }
+.orange .nav_main a:hover { background: #f6d4b2; }
+.orange .sel a { background-color: #f6d4b2; color: #000; }
+.orange .content_wrapper2 { border-top: 10px solid #f6d4b2;  }
+
+.orange .visual { background-color: #fbead9; }
+.orange .tong { background-color: #e17000; }
+.orange .tong h1, .orange .tong h2, .orange .tong h3, .orange .tong h4, .orange .tong h5,
+.orange .tong h6, .orange .tong ul, .orange .tong ol, .orange .tong dl, .orange .tong p, .orange .tong a, .orange .tong blockquote { color: #000; }
+
+.orange .search li a, .orange .search li a:hover { color: #000; }
+
+.orange .nav_sub li a:hover { background-color: #fcd0bb !important; }
+
+.orange .nav_sub li.open a,
+.orange .nav_sub li.open li.open a,
+.orange .nav_sub li.open li.open li.open a,
+.orange .nav_sub li.open li.open li.open li.open a,
+.orange .nav_sub li.open li.open li.open li.open li.open a { background-color: #fbead9; }
+
+.orange .nav_sub li.active a,
+.orange .nav_sub li.open li.active a,
+.orange .nav_sub li.open li.open li.active a,
+.orange .nav_sub li.open li.open li.open li.active a,
+.orange .nav_sub li.open li.open li.open li.open li.active a,
+.orange .nav_sub li.open li.open li.open li.open li.open li.active a { background-color: #f6d4b2; }
+
+.orange .hl_lighter { background-color: #f6d4b2; }
+.orange .hl_lightest { background-color: #fbead9; }
+
+.orange .hl_color15 { background-color: #76d2b6; }	/* mint-green instead of orange */
+
+.orange .banner,
+.orange .banner a,
+.orange .banner h3,
+.orange .banner h4 { color: #fff; }
+
+.orange .banner.hl_lighter,
+.orange .banner.hl_lightest,
+.orange .banner.hl_color11,
+.orange .banner.hl_color12,
+.orange .banner.hl_color13,
+.orange .banner.hl_color14,
+.orange .banner.hl_color15,
+.orange .banner.hl_lighter a,
+.orange .banner.hl_lightest a,
+.orange .banner.hl_color11 a,
+.orange .banner.hl_color12 a,
+.orange .banner.hl_color13 a,
+.orange .banner.hl_color14 a,
+.orange .banner.hl_color15 a,
+.orange .banner.hl_lighter h3,
+.orange .banner.hl_lightest h3,
+.orange .banner.hl_color11 h3,
+.orange .banner.hl_color12 h3,
+.orange .banner.hl_color13 h3,
+.orange .banner.hl_color14 h3,
+.orange .banner.hl_color15 h3,
+.orange .banner.hl_lighter h4,
+.orange .banner.hl_lightest h4,
+.orange .banner.hl_color11 h4,
+.orange .banner.hl_color12 h4,
+.orange .banner.hl_color13 h4,
+.orange .banner.hl_color14 h4,
+.orange .banner.hl_color15 h4 { color: #000; }
+
+.orange .box.open.lighter h2,
+.orange .box.open.lighter h3,
+.orange .box.open.lighter h4,
+.orange .box.open.lighter h5,
+.orange .box.open.lighter h6 { background-color: #f6d4b2; }
+.orange .box.open.lighter { border: 1px solid #f6d4b2; }
+
+.orange .box.open.lightest h2,
+.orange .box.open.lightest h3,
+.orange .box.open.lightest h4,
+.orange .box.open.lightest h5,
+.orange .box.open.lightest h6 { background-color: #fbead9; }
+.orange .box.open.lightest { border: 1px solid #fbead9; }
+
+.orange .box.closed h2,
+.orange .box.closed h3,
+.orange .box.closed h4,
+.orange .box.closed h5,
+.orange .box.closed h6 { background-color: #f6d4b2; }
+.orange .box.closed { background-color: #fbead9; border: 1px solid #f6d4b2; }
+
+.orange .box.open.contrast_lighter h2,
+.orange .box.open.contrast_lighter h3,
+.orange .box.open.contrast_lighter h4,
+.orange .box.open.contrast_lighter h5,
+.orange .box.open.contrast_lighter h6 { background-color: #dfd4b5; }
+.orange .box.open.contrast_lighter { border: 1px solid #dfd4b5; }
+
+.orange .box.open.contrast_lightest h2,
+.orange .box.open.contrast_lightest h3,
+.orange .box.open.contrast_lightest h4,
+.orange .box.open.contrast_lightest h5,
+.orange .box.open.contrast_lightest h6 { background-color: #efeada; }
+.orange .box.open.contrast_lightest { border: 1px solid #efeada; }
+
+.orange .box.closed.contrast h2,
+.orange .box.closed.contrast h3,
+.orange .box.closed.contrast h4,
+.orange .box.closed.contrast h5,
+.orange .box.closed.contrast h6 { background-color: #dfd4b5; }
+.orange .box.closed.contrast { background-color: #efeada; border: 1px solid #dfd4b5; }
+
+@import url("common.css");

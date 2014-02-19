@@ -1,0 +1,191 @@
+/**
+ * pink.css
+ *
+ * Definition of all 16 available Rijksoverheid brand identity colors.
+ *
+ * @version			1.0.1
+ * @date			2009-08-28
+ * @lastmodified	2010-04-13 17:21
+ * @author			Studio Dumbar (Jonathan van Wunnik)
+ * @project			Starters Kit Rijksoverheid
+ * @link			http://www.website.com
+ * @cssdoc			version 1.0-pre
+ *
+ * @colordef		#623327; dark-brown 1 (full)		| 01
+ * @colordef		#d1c1be; dark-brown 2 (lighter)
+ * @colordef		#e8e1df; dark-brown 3 (lightest)
+ *
+ * @colordef		#42145f; purple 1 (full)			| 02
+ * @colordef		#c6b8cf; purple 2 (lighter)
+ * @colordef		#e3dce7; purple 3 (lightest)
+ *
+ * @colordef		#275937; dark-green 1 (full)		| 03
+ * @colordef		#becdc3; dark-green 2 (lighter)
+ * @colordef		#dfe6e1; dark-green 3 (lightest)
+ *
+ * @colordef		#ca005a; ruby (full)				| 04
+ * @colordef		#efb2ce; ruby (lighter)
+ * @colordef		#f7d9e7; ruby (lightest)
+ *
+ * @colordef		#d52b1e; red 1 (full)				| 05
+ * @colordef		#f2bfbb; red 2 (lighter)
+ * @colordef		#f9dfdd; red 3 (lightest)
+ *
+ * @colordef		#a90061; violet (full)				| 06
+ * @colordef		#e5b2cf; violet (lighter)
+ * @colordef		#f2d9e7; violet (lightest)
+ *
+ * @colordef		#777c00; moss-green 1 (full)		| 07
+ * @colordef		#d6d7b2; moss-green 2 (lighter)
+ * @colordef		#ebebd9; moss-green 3 (lightest)
+ *
+ * @colordef		#94710a; brown 1 (full)				| 08
+ * @colordef		#dfd4b5; brown 2 (lighter)
+ * @colordef		#efeada; brown 3 (lightest)
+ *
+ * @colordef		#39870c; green 1 (full)				| 09
+ * @colordef		#c3dbb6; green 2 (lighter)
+ * @colordef		#e1eddb; green 3 (lightest)
+ *
+ * @colordef		#007bc7; azure 1 (full)				| 10
+ * @colordef		#b2d7ee; azure 2 (lighter)
+ * @colordef		#d9ebf7; azure 3 (lightest)
+ *
+ * @colordef		#8fcae7; light-blue 1 (full)		| 11
+ * @colordef		#ddeff8; light-blue 2 (lighter)
+ * @colordef		#eef7fb; light-blue 3 (lightest)
+ *
+ * @colordef		#f092cd; pink 1 (full)				| 12
+ * @colordef		#fadef0; pink 2 (lighter)
+ * @colordef		#fdeff8; pink 3 (lightest)
+ *
+ * @colordef		#f9e11e; yellow 1 (full)			| 13
+ * @colordef		#fdf6bb; yellow 2 (lighter)
+ * @colordef		#fefbdd; yellow 3 (lightest)
+ *
+ * @colordef		#ffb612; dark-yellow 1 (full)		| 14
+ * @colordef		#ffe9b7; dark-yellow 2 (lighter)
+ * @colordef		#fff4dc; dark-yellow 3 (lightest)
+ *
+ * @colordef		#76d2b6; mint-green 1 (full)		| 15
+ * @colordef		#d6f1e9; mint-green 2 (lighter)
+ * @colordef		#ebf8f4; mint-green 3 (lightest)
+ *
+ * @colordef		#e17000; orange 1 (full)			| 16
+ * @colordef		#f6d4b2; orange 2 (lighter)
+ * @colordef		#fbead9; orange 3 (lightest)
+ *
+ */
+
+/*	Colors 12 (pink) */
+.pink .title_bar { background: #fdeff8; }
+.pink .nav_bar { background: #f092cd; }
+.pink .nav_main a { color: #000; }
+.pink .nav_main a:hover { background: #fadef0; }
+.pink .sel a { background-color: #fadef0; color: #000; }
+.pink .content_wrapper2 { border-top: 10px solid #fadef0;  }
+
+.pink .visual { background-color: #fdeff8; }
+.pink .tong { background-color: #f092cd; }
+.pink .tong h1, .pink .tong h2, .pink .tong h3, .pink .tong h4, .pink .tong h5,
+.pink .tong h6, .pink .tong ul, .pink .tong ol, .pink .tong dl, .pink .tong p, .pink .tong a, .pink .tong blockquote { color: #000; }
+
+.pink .search li a, .pink .search li a:hover { color: #000; }
+
+.pink .nav_sub li a:hover { background-color: #faddea !important; }
+
+.pink .nav_sub li.open a,
+.pink .nav_sub li.open li.open a,
+.pink .nav_sub li.open li.open li.open a,
+.pink .nav_sub li.open li.open li.open li.open a,
+.pink .nav_sub li.open li.open li.open li.open li.open a { background-color: #fdeff8; }
+
+.pink .nav_sub li.active a,
+.pink .nav_sub li.open li.active a,
+.pink .nav_sub li.open li.open li.active a,
+.pink .nav_sub li.open li.open li.open li.active a,
+.pink .nav_sub li.open li.open li.open li.open li.active a,
+.pink .nav_sub li.open li.open li.open li.open li.open li.active a { background-color: #fadef0; }
+
+.pink .hl_lighter { background-color: #fadef0; }
+.pink .hl_lightest { background-color: #fdeff8; }
+
+.pink .hl_color12 { background-color: #e17000; }	/* orange instead of pink */
+
+.pink .banner,
+.pink .banner a,
+.pink .banner h3,
+.pink .banner h4 { color: #fff; }
+
+.pink .banner.hl_lighter,
+.pink .banner.hl_lightest,
+.pink .banner.hl_color11,
+.pink .banner.hl_color12,
+.pink .banner.hl_color13,
+.pink .banner.hl_color14,
+.pink .banner.hl_color15,
+.pink .banner.hl_lighter a,
+.pink .banner.hl_lightest a,
+.pink .banner.hl_color11 a,
+.pink .banner.hl_color12 a,
+.pink .banner.hl_color13 a,
+.pink .banner.hl_color14 a,
+.pink .banner.hl_color15 a,
+.pink .banner.hl_lighter h3,
+.pink .banner.hl_lightest h3,
+.pink .banner.hl_color11 h3,
+.pink .banner.hl_color12 h3,
+.pink .banner.hl_color13 h3,
+.pink .banner.hl_color14 h3,
+.pink .banner.hl_color15 h3,
+.pink .banner.hl_lighter h4,
+.pink .banner.hl_lightest h4,
+.pink .banner.hl_color11 h4,
+.pink .banner.hl_color12 h4,
+.pink .banner.hl_color13 h4,
+.pink .banner.hl_color14 h4,
+.pink .banner.hl_color15 h4 { color: #000; }
+
+.pink .box.open.lighter h2,
+.pink .box.open.lighter h3,
+.pink .box.open.lighter h4,
+.pink .box.open.lighter h5,
+.pink .box.open.lighter h6 { background-color: #fadef0; }
+.pink .box.open.lighter { border: 1px solid #fadef0; }
+
+.pink .box.open.lightest h2,
+.pink .box.open.lightest h3,
+.pink .box.open.lightest h4,
+.pink .box.open.lightest h5,
+.pink .box.open.lightest h6 { background-color: #fdeff8; }
+.pink .box.open.lightest { border: 1px solid #fdeff8; }
+
+.pink .box.closed h2,
+.pink .box.closed h3,
+.pink .box.closed h4,
+.pink .box.closed h5,
+.pink .box.closed h6 { background-color: #fadef0; }
+.pink .box.closed { background-color: #fdeff8; border: 1px solid #fadef0; }
+
+.pink .box.open.contrast_lighter h2,
+.pink .box.open.contrast_lighter h3,
+.pink .box.open.contrast_lighter h4,
+.pink .box.open.contrast_lighter h5,
+.pink .box.open.contrast_lighter h6 { background-color: #e5b2cf; }
+.pink .box.open.contrast_lighter { border: 1px solid #e5b2cf; }
+
+.pink .box.open.contrast_lightest h2,
+.pink .box.open.contrast_lightest h3,
+.pink .box.open.contrast_lightest h4,
+.pink .box.open.contrast_lightest h5,
+.pink .box.open.contrast_lightest h6 { background-color: #f2d9e7; }
+.pink .box.open.contrast_lightest { border: 1px solid #f2d9e7; }
+
+.pink .box.closed.contrast h2,
+.pink .box.closed.contrast h3,
+.pink .box.closed.contrast h4,
+.pink .box.closed.contrast h5,
+.pink .box.closed.contrast h6 { background-color: #e5b2cf; }
+.pink .box.closed.contrast { background-color: #f2d9e7; border: 1px solid #e5b2cf; }
+
+@import url("common.css");

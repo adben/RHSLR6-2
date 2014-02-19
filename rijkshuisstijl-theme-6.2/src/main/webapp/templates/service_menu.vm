@@ -1,0 +1,26 @@
+<div class="func_links" id="service_menu">
+  <h4>Service menu</h4>
+  <ul class="right">
+      #if ($is_signed_in)
+        <li><a href="#" title="">Mijn Links</a></li>
+        <li><a href="http://iprofs.nl/contact/" title="">Contact</a></li>
+        <li><a href="http://iprofs.nl/" title="">Hulp</a></li>
+      #else
+          #set ($create_account_url = $portletURLFactory.create($request, "58", $page.getPlid(), "ACTION_PHASE"))
+          $create_account_url.setWindowState("maximized")
+          $create_account_url.setPortletMode("view")
+          $create_account_url.setParameter("saveLastPath", "0")
+          $create_account_url.setParameter("struts_action", "/login/create_account")
+        <li><a href="$create_account_url" title="">Registreren</a></li>
+        <li><a href="$sign_in_url" id="sign-in" rel="nofollow">Inloggen</a></li>
+        <li><a href="http://iprofs.nl/" title="Hulp">Hulp nodig?</a></li>
+      #end
+  </ul>
+  <ul class="left">
+    <li><a href="#" title="Abonneer op de RSS nieuws feed" class="rss">RSS nieuws feed</a></li>
+      #if ($is_signed_in)
+        <li><a href="$my_account_url" title="Ingelogd">Ingelogd als $user_first_name $user_last_name</a></li>
+        <li><a href="$sign_out_url" title="Uitloggen">Uitloggen</a></li>
+      #end
+  </ul>
+</div>

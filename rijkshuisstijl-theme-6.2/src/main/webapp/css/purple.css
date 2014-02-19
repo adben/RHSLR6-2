@@ -1,0 +1,195 @@
+/**
+ * purple.css
+ *
+ * Definition of all 16 available Rijksoverheid brand identity colors.
+ *
+ * @version			1.0.1
+ * @date			2009-08-28
+ * @lastmodified	2010-04-13 17:21
+ * @author			Studio Dumbar (Jonathan van Wunnik)
+ * @project			Starters Kit Rijksoverheid
+ * @link			http://www.website.com
+ * @cssdoc			version 1.0-pre
+ *
+ * @colordef		#623327; dark-brown 1 (full)		| 01
+ * @colordef		#d1c1be; dark-brown 2 (lighter)
+ * @colordef		#e8e1df; dark-brown 3 (lightest)
+ *
+ * @colordef		#42145f; purple 1 (full)			| 02
+ * @colordef		#c6b8cf; purple 2 (lighter)
+ * @colordef		#e3dce7; purple 3 (lightest)
+ *
+ * @colordef		#275937; dark-green 1 (full)		| 03
+ * @colordef		#becdc3; dark-green 2 (lighter)
+ * @colordef		#dfe6e1; dark-green 3 (lightest)
+ *
+ * @colordef		#ca005a; ruby (full)				| 04
+ * @colordef		#efb2ce; ruby (lighter)
+ * @colordef		#f7d9e7; ruby (lightest)
+ *
+ * @colordef		#d52b1e; red 1 (full)				| 05
+ * @colordef		#f2bfbb; red 2 (lighter)
+ * @colordef		#f9dfdd; red 3 (lightest)
+ *
+ * @colordef		#a90061; violet (full)				| 06
+ * @colordef		#e5b2cf; violet (lighter)
+ * @colordef		#f2d9e7; violet (lightest)
+ *
+ * @colordef		#777c00; moss-green 1 (full)		| 07
+ * @colordef		#d6d7b2; moss-green 2 (lighter)
+ * @colordef		#ebebd9; moss-green 3 (lightest)
+ *
+ * @colordef		#94710a; brown 1 (full)				| 08
+ * @colordef		#dfd4b5; brown 2 (lighter)
+ * @colordef		#efeada; brown 3 (lightest)
+ *
+ * @colordef		#39870c; green 1 (full)				| 09
+ * @colordef		#c3dbb6; green 2 (lighter)
+ * @colordef		#e1eddb; green 3 (lightest)
+ *
+ * @colordef		#007bc7; azure 1 (full)				| 10
+ * @colordef		#b2d7ee; azure 2 (lighter)
+ * @colordef		#d9ebf7; azure 3 (lightest)
+ *
+ * @colordef		#8fcae7; light-blue 1 (full)		| 11
+ * @colordef		#ddeff8; light-blue 2 (lighter)
+ * @colordef		#eef7fb; light-blue 3 (lightest)
+ *
+ * @colordef		#f092cd; pink 1 (full)				| 12
+ * @colordef		#fadef0; pink 2 (lighter)
+ * @colordef		#fdeff8; pink 3 (lightest)
+ *
+ * @colordef		#f9e11e; yellow 1 (full)			| 13
+ * @colordef		#fdf6bb; yellow 2 (lighter)
+ * @colordef		#fefbdd; yellow 3 (lightest)
+ *
+ * @colordef		#ffb612; dark-yellow 1 (full)		| 14
+ * @colordef		#ffe9b7; dark-yellow 2 (lighter)
+ * @colordef		#fff4dc; dark-yellow 3 (lightest)
+ *
+ * @colordef		#76d2b6; mint-green 1 (full)		| 15
+ * @colordef		#d6f1e9; mint-green 2 (lighter)
+ * @colordef		#ebf8f4; mint-green 3 (lightest)
+ *
+ * @colordef		#e17000; orange 1 (full)			| 16
+ * @colordef		#f6d4b2; orange 2 (lighter)
+ * @colordef		#fbead9; orange 3 (lightest)
+ *
+ */
+
+/* Colors 2 (purple) */
+.purple .title_bar { background: #e3dce7; }
+.purple .nav_bar { background: #42145f; }
+.purple .nav_main a { color: #fff; }
+.purple .nav_main a:hover { background: #c6b8cf; }
+.purple .sel a { background-color: #c6b8cf; color: #000; }
+.purple .content_wrapper2 { border-top: 10px solid #c6b8cf;  }
+
+.purple .visual { background-color: #e3dce7; }
+.purple .tong { background-color: #42145f; }
+.purple .tong h1, .purple .tong h2, .purple .tong h3, .purple .tong h4, .purple .tong h5,
+.purple .tong h6, .purple .tong ul, .purple .tong ol, .purple .tong dl, .purple .tong p, .purple .tong a, .purple .tong blockquote { color: #fff; }
+
+.purple .search li a, .purple .search li a:hover { color: #fff; }
+
+.purple .nav_sub li a:hover { background-color: #c7b8ce !important; }
+
+.purple .nav_sub li.open a,
+.purple .nav_sub li.open li.open a,
+.purple .nav_sub li.open li.open li.open a,
+.purple .nav_sub li.open li.open li.open li.open a,
+.purple .nav_sub li.open li.open li.open li.open li.open a { background-color: #e3dce7; }
+
+.purple .nav_sub li.active a,
+.purple .nav_sub li.open li.active a,
+.purple .nav_sub li.open li.open li.active a,
+.purple .nav_sub li.open li.open li.open li.active a,
+.purple .nav_sub li.open li.open li.open li.open li.active a,
+.purple .nav_sub li.open li.open li.open li.open li.open li.active a { background-color: #c6b8cf; }
+
+.purple .hl_lighter { background-color: #c6b8cf; }
+.purple .hl_lightest { background-color: #e3dce7; }
+
+.purple .hl_color2 { background-color: #e17000; }	/* orange instead of puple */
+
+.purple .banner,
+.purple .banner a,
+.purple .banner h3,
+.purple .banner h4 { color: #fff; }
+
+.purple .banner.hl_lighter,
+.purple .banner.hl_lightest,
+.purple .banner.hl_color2,
+.purple .banner.hl_color11,
+.purple .banner.hl_color12,
+.purple .banner.hl_color13,
+.purple .banner.hl_color14,
+.purple .banner.hl_color15,
+.purple .banner.hl_lighter a,
+.purple .banner.hl_lightest a,
+.purple .banner.hl_color2 a,
+.purple .banner.hl_color11 a,
+.purple .banner.hl_color12 a,
+.purple .banner.hl_color13 a,
+.purple .banner.hl_color14 a,
+.purple .banner.hl_color15 a,
+.purple .banner.hl_lighter h3,
+.purple .banner.hl_lightest h3,
+.purple .banner.hl_color2 h3,
+.purple .banner.hl_color11 h3,
+.purple .banner.hl_color12 h3,
+.purple .banner.hl_color13 h3,
+.purple .banner.hl_color14 h3,
+.purple .banner.hl_color15 h3,
+.purple .banner.hl_lighter h4,
+.purple .banner.hl_lightest h4,
+.purple .banner.hl_color2 h4,
+.purple .banner.hl_color11 h4,
+.purple .banner.hl_color12 h4,
+.purple .banner.hl_color13 h4,
+.purple .banner.hl_color14 h4,
+.purple .banner.hl_color15 h4 { color: #000; }
+
+.purple .box.open.lighter h2,
+.purple .box.open.lighter h3,
+.purple .box.open.lighter h4,
+.purple .box.open.lighter h5,
+.purple .box.open.lighter h6 { background-color: #c6b8cf; }
+.purple .box.open.lighter { border: 1px solid #c6b8cf; }
+
+.purple .box.open.lightest h2,
+.purple .box.open.lightest h3,
+.purple .box.open.lightest h4,
+.purple .box.open.lightest h5,
+.purple .box.open.lightest h6 { background-color: #e8e1df; }
+.purple .box.open.lightest { border: 1px solid #e8e1df; }
+
+.purple .box.closed h2,
+.purple .box.closed h3,
+.purple .box.closed h4,
+.purple .box.closed h5,
+.purple .box.closed h6 { background-color: #c6b8cf; }
+.purple .box.closed { background-color: #e8e1df; border: 1px solid #c6b8cf; }
+
+.purple .box.open.contrast_lighter h2,
+.purple .box.open.contrast_lighter h3,
+.purple .box.open.contrast_lighter h4,
+.purple .box.open.contrast_lighter h5,
+.purple .box.open.contrast_lighter h6 { background-color: #f2bfbb; }
+.purple .box.open.contrast_lighter { border: 1px solid #f2bfbb; }
+
+.purple .box.open.contrast_lightest h2,
+.purple .box.open.contrast_lightest h3,
+.purple .box.open.contrast_lightest h4,
+.purple .box.open.contrast_lightest h5,
+.purple .box.open.contrast_lightest h6 { background-color: #f9dfdd; }
+.purple .box.open.contrast_lightest { border: 1px solid #f9dfdd; }
+
+.purple .box.closed.contrast h2,
+.purple .box.closed.contrast h3,
+.purple .box.closed.contrast h4,
+.purple .box.closed.contrast h5,
+.purple .box.closed.contrast h6 { background-color: #f2bfbb; }
+.purple .box.closed.contrast { background-color: #f9dfdd; border: 1px solid #f2bfbb; }
+
+@import url("common.css");

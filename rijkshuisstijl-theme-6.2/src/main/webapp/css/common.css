@@ -1,0 +1,210 @@
+/**
+ * common.css
+ *
+ * Definition of all 16 available Rijksoverheid brand identity colors.
+ *
+ * @version			1.0.1
+ * @date			2009-08-28
+ * @lastmodified	2010-04-13 17:21
+ * @author			Studio Dumbar (Jonathan van Wunnik)
+ * @project			Starters Kit Rijksoverheid
+ * @link			http://www.website.com
+ * @cssdoc			version 1.0-pre
+ *
+ * @colordef		#623327; dark-brown 1 (full)		| 01
+ * @colordef		#d1c1be; dark-brown 2 (lighter)
+ * @colordef		#e8e1df; dark-brown 3 (lightest)
+ *
+ * @colordef		#42145f; purple 1 (full)			| 02
+ * @colordef		#c6b8cf; purple 2 (lighter)
+ * @colordef		#e3dce7; purple 3 (lightest)
+ *
+ * @colordef		#275937; dark-green 1 (full)		| 03
+ * @colordef		#becdc3; dark-green 2 (lighter)
+ * @colordef		#dfe6e1; dark-green 3 (lightest)
+ *
+ * @colordef		#ca005a; ruby (full)				| 04
+ * @colordef		#efb2ce; ruby (lighter)
+ * @colordef		#f7d9e7; ruby (lightest)
+ *
+ * @colordef		#d52b1e; red 1 (full)				| 05
+ * @colordef		#f2bfbb; red 2 (lighter)
+ * @colordef		#f9dfdd; red 3 (lightest)
+ *
+ * @colordef		#a90061; violet (full)				| 06
+ * @colordef		#e5b2cf; violet (lighter)
+ * @colordef		#f2d9e7; violet (lightest)
+ *
+ * @colordef		#777c00; moss-green 1 (full)		| 07
+ * @colordef		#d6d7b2; moss-green 2 (lighter)
+ * @colordef		#ebebd9; moss-green 3 (lightest)
+ *
+ * @colordef		#94710a; brown 1 (full)				| 08
+ * @colordef		#dfd4b5; brown 2 (lighter)
+ * @colordef		#efeada; brown 3 (lightest)
+ *
+ * @colordef		#39870c; green 1 (full)				| 09
+ * @colordef		#c3dbb6; green 2 (lighter)
+ * @colordef		#e1eddb; green 3 (lightest)
+ *
+ * @colordef		#007bc7; azure 1 (full)				| 10
+ * @colordef		#b2d7ee; azure 2 (lighter)
+ * @colordef		#d9ebf7; azure 3 (lightest)
+ *
+ * @colordef		#8fcae7; light-blue 1 (full)		| 11
+ * @colordef		#ddeff8; light-blue 2 (lighter)
+ * @colordef		#eef7fb; light-blue 3 (lightest)
+ *
+ * @colordef		#f092cd; pink 1 (full)				| 12
+ * @colordef		#fadef0; pink 2 (lighter)
+ * @colordef		#fdeff8; pink 3 (lightest)
+ *
+ * @colordef		#f9e11e; yellow 1 (full)			| 13
+ * @colordef		#fdf6bb; yellow 2 (lighter)
+ * @colordef		#fefbdd; yellow 3 (lightest)
+ *
+ * @colordef		#ffb612; dark-yellow 1 (full)		| 14
+ * @colordef		#ffe9b7; dark-yellow 2 (lighter)
+ * @colordef		#fff4dc; dark-yellow 3 (lightest)
+ *
+ * @colordef		#76d2b6; mint-green 1 (full)		| 15
+ * @colordef		#d6f1e9; mint-green 2 (lighter)
+ * @colordef		#ebf8f4; mint-green 3 (lightest)
+ *
+ * @colordef		#e17000; orange 1 (full)			| 16
+ * @colordef		#f6d4b2; orange 2 (lighter)
+ * @colordef		#fbead9; orange 3 (lightest)
+ *
+ */
+
+/* arrow color white in 'tong' */
+.dark_brown .tong ul li,
+.purple .tong ul li,
+.dark_green .tong ul li,
+.ruby .tong ul li,
+.red .tong ul li,
+.violet .tong ul li,
+.moss_green .tong ul li,
+.brown .tong ul li,
+.green .tong ul li,
+.azure .tong ul li { background-position: left -275px; }
+
+
+/* arrow color black in 'tong' */
+.light_blue .tong ul li,
+.pink .tong ul li,
+.yellow .tong ul li,
+.dark_yellow .tong ul li,
+.mint_green .tong ul li,
+.orange .tong ul li { background-position: left -180px; }
+
+
+/*
+* Transparent
+*
+* @section			Set the background to transparent for not 'open' and 'active' anchors
+*/
+
+.dark_brown .nav_sub li.open li a,
+.dark_brown .nav_sub li.open li.open li a,
+.dark_brown .nav_sub li.open li.open li.open li a,
+.dark_brown .nav_sub li.open li.open li.open li.open li a,
+.dark_brown .nav_sub li.open li.open li.open li.open li.open li a,
+.purple .nav_sub li.open li a,
+.purple .nav_sub li.open li.open li a,
+.purple .nav_sub li.open li.open li.open li a,
+.purple .nav_sub li.open li.open li.open li.open li a,
+.purple .nav_sub li.open li.open li.open li.open li.open li a,
+.dark_green .nav_sub li.open li a,
+.dark_green .nav_sub li.open li.open li a,
+.dark_green .nav_sub li.open li.open li.open li a,
+.dark_green .nav_sub li.open li.open li.open li.open li a,
+.dark_green .nav_sub li.open li.open li.open li.open li.open li a,
+.ruby .nav_sub li.open li a,
+.ruby .nav_sub li.open li.open li a,
+.ruby .nav_sub li.open li.open li.open li a,
+.ruby .nav_sub li.open li.open li.open li.open li a,
+.ruby .nav_sub li.open li.open li.open li.open li.open li a,
+.red .nav_sub li.open li a,
+.red .nav_sub li.open li.open li a,
+.red .nav_sub li.open li.open li.open li a,
+.red .nav_sub li.open li.open li.open li.open li a,
+.red .nav_sub li.open li.open li.open li.open li.open li a,
+.violet .nav_sub li.open li a,
+.violet .nav_sub li.open li.open li a,
+.violet .nav_sub li.open li.open li.open li a,
+.violet .nav_sub li.open li.open li.open li.open li a,
+.violet .nav_sub li.open li.open li.open li.open li.open li a,
+.moss_green .nav_sub li.open li a,
+.moss_green .nav_sub li.open li.open li a,
+.moss_green .nav_sub li.open li.open li.open li a,
+.moss_green .nav_sub li.open li.open li.open li.open li a,
+.moss_green .nav_sub li.open li.open li.open li.open li.open li a,
+.brown .nav_sub li.open li a,
+.brown .nav_sub li.open li.open li a,
+.brown .nav_sub li.open li.open li.open li a,
+.brown .nav_sub li.open li.open li.open li.open li a,
+.brown .nav_sub li.open li.open li.open li.open li.open li a,
+.green .nav_sub li.open li a,
+.green .nav_sub li.open li.open li a,
+.green .nav_sub li.open li.open li.open li a,
+.green .nav_sub li.open li.open li.open li.open li a,
+.green .nav_sub li.open li.open li.open li.open li.open li a,
+.azure .nav_sub li.open li a,
+.azure .nav_sub li.open li.open li a,
+.azure .nav_sub li.open li.open li.open li a,
+.azure .nav_sub li.open li.open li.open li.open li a,
+.azure .nav_sub li.open li.open li.open li.open li.open li a,
+.light_blue .nav_sub li.open li a,
+.light_blue .nav_sub li.open li.open li a,
+.light_blue .nav_sub li.open li.open li.open li a,
+.light_blue .nav_sub li.open li.open li.open li.open li a,
+.light_blue .nav_sub li.open li.open li.open li.open li.open li a,
+.pink .nav_sub li.open li a,
+.pink .nav_sub li.open li.open li a,
+.pink .nav_sub li.open li.open li.open li a,
+.pink .nav_sub li.open li.open li.open li.open li a,
+.pink .nav_sub li.open li.open li.open li.open li.open li a,
+.yellow .nav_sub li.open li a,
+.yellow .nav_sub li.open li.open li a,
+.yellow .nav_sub li.open li.open li.open li a,
+.yellow .nav_sub li.open li.open li.open li.open li a,
+.yellow .nav_sub li.open li.open li.open li.open li.open li a,
+.dark_yellow .nav_sub li.open li a,
+.dark_yellow .nav_sub li.open li.open li a,
+.dark_yellow .nav_sub li.open li.open li.open li a,
+.dark_yellow .nav_sub li.open li.open li.open li.open li a,
+.dark_yellow .nav_sub li.open li.open li.open li.open li.open li a,
+.mint_green .nav_sub li.open li a,
+.mint_green .nav_sub li.open li.open li a,
+.mint_green .nav_sub li.open li.open li.open li a,
+.mint_green .nav_sub li.open li.open li.open li.open li a,
+.mint_green .nav_sub li.open li.open li.open li.open li.open li a,
+.orange .nav_sub li.open li a,
+.orange .nav_sub li.open li.open li a,
+.orange .nav_sub li.open li.open li.open li a,
+.orange .nav_sub li.open li.open li.open li.open li a,
+.orange .nav_sub li.open li.open li.open li.open li.open li a { background-color: transparent; }
+
+
+/*
+* Banners
+*
+* @section			Set the background (highlight) color for banners
+*/
+
+.hl_color1 { background-color: #623327; }	/* dark-brown */
+.hl_color2 { background-color: #42145f; }	/* purple */
+.hl_color3 { background-color: #275937; }	/* dark-green */
+.hl_color4 { background-color: #ca005a; }	/* ruby */
+.hl_color5 { background-color: #d52b1e; }	/* red */
+.hl_color6 { background-color: #a90061; }	/* violet */
+.hl_color7 { background-color: #777c00; }	/* moss-green */
+.hl_color8 { background-color: #94710a; }	/* brown */
+.hl_color9 { background-color: #39870c; }	/* green */
+.hl_color10 { background-color: #007bc7; }	/* azure */
+.hl_color11 { background-color: #8fcae7; }	/* light-blue */
+.hl_color12 { background-color: #f092cd; }	/* pink */
+.hl_color13 { background-color: #f9e11e; }	/* yellow */
+.hl_color14 { background-color: #ffb612; }	/* dark-yellow */
+.hl_color15 { background-color: #76d2b6; }	/* mint-green */

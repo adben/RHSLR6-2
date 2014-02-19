@@ -6,5 +6,56 @@
 		<version>6.2.0+</version>
 	</compatibility>
 	<theme id="rijkshuisstijl-theme-6.2" name="Rijkshuisstijl Theme">
+		<settings>
+			<setting key="default-color-setting" value="light_blue"/>
+		</settings>
+		<color-scheme id="01" name="dark brown">
+			<css-class>dark_brown</css-class>
+		</color-scheme>
+		<color-scheme id="02" name="purple">
+			<css-class>purple</css-class>
+		</color-scheme>
+		<color-scheme id="03" name="dark green">
+			<css-class>dark_green</css-class>
+		</color-scheme>
+		<color-scheme id="04" name="ruby">
+			<css-class>ruby</css-class>
+		</color-scheme>
+		<color-scheme id="05" name="red">
+			<css-class>red</css-class>
+		</color-scheme>
+		<color-scheme id="06" name="violet">
+			<css-class>violet</css-class>
+		</color-scheme>
+		<color-scheme id="07" name="moss green">
+			<css-class>moss_green</css-class>
+		</color-scheme>
+		<color-scheme id="08" name="brown">
+			<css-class>brown</css-class>
+		</color-scheme>
+		<color-scheme id="09" name="green">
+			<css-class>green</css-class>
+		</color-scheme>
+		<color-scheme id="10" name="azure">
+			<css-class>azure</css-class>
+		</color-scheme>
+		<color-scheme id="11" name="light blue">
+			<css-class>light_blue</css-class>
+		</color-scheme>
+		<color-scheme id="12" name="pink">
+			<css-class>pink</css-class>
+		</color-scheme>
+		<color-scheme id="13" name="yellow">
+			<css-class>yellow</css-class>
+		</color-scheme>
+		<color-scheme id="14" name="dark yellow">
+			<css-class>dark_yellow</css-class>
+		</color-scheme>
+		<color-scheme id="15" name="mint green">
+			<css-class>mint_green</css-class>
+		</color-scheme>
+		<color-scheme id="16" name="orange">
+			<css-class>orange</css-class>
+		</color-scheme>
 	</theme>
 </look-and-feel>

@@ -1,0 +1,7 @@
+<div class="search">
+    $theme.search()
+	<ul>
+		<li class="advanced_search"><a href="#" title="Uitgebreid zoeken">Uitgebreid zoeken</a></li>
+		<li class="sitemap"><a href="#" title="Sitemap">Sitemap</a></li>
+	</ul>
+</div>
