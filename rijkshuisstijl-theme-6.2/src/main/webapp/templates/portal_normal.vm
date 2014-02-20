@@ -20,43 +20,44 @@
     #if ($permissionChecker.isOmniadmin())
         #dockbar()
     #end
-<div class="container-fluid container equalize $css_class" id="global-container">
-  <header id="banner" role="banner">
-    <div id="heading">
-
-      <h1 class="branding">
-        <a class="$logo_css_class" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
-          <img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width"/>
-        </a>
-          #if ($show_site_name)
-            <span class="site-name" title="#language_format ("go-to-x", [$site_name])">
-                $site_name
-            </span>
-          #end
-      </h1>
-
-      <div class="nav_bar">
-          #if ($has_navigation || $is_signed_in)
-              #parse ("$full_templates_path/navigation.vm")
-          #end
-          #parse ("$full_templates_path/search.vm")
-      </div>
-    </div>
-  </header>
-</div>
-<div class="content_wrapper1">
-  <div class="content_wrapper2" id="main-content" role="main">
-
-      #if ($selectable)
-          $theme.include($content_include)
-      #else
-          $portletDisplay.recycle()
-          $portletDisplay.setTitle($the_title)
-          $theme.wrapPortlet("portlet.vm", $content_include)
-      #end
-  </div>
-</div>
-    #parse ("$full_templates_path/service_menu.vm")
+	<div class="container-fluid container equalize $css_class" id="global-container">
+		<header id="banner" role="banner">
+			<div id="heading" class="header">
+			  	<h1 class="branding">
+					<a class="$logo_css_class" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
+						<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width"/>
+					</a>
+					#if ($show_site_name)
+						<span class="site-name" title="#language_format ("go-to-x", [$site_name])">
+						$site_name
+						</span>
+					#end
+			 	 </h1>
+			
+				<div class="nav_bar">
+				  #if ($has_navigation || $is_signed_in)
+				  #parse ("$full_templates_path/navigation.vm")
+				  #end
+				  #parse ("$full_templates_path/search.vm")
+				</div>
+			</div>
+		</header>
+		<div class="content_wrapper1">
+			<div class="content_wrapper2" id="main-content" role="main">
+			
+			  #if ($selectable)
+			  $theme.include($content_include)
+			  #else
+			  $portletDisplay.recycle()
+			  $portletDisplay.setTitle($the_title)
+			  $theme.wrapPortlet("portlet.vm", $content_include)
+			  #end
+			</div>
+				
+		</div>
+		#parse ("$full_templates_path/service_menu.vm")
+	</div>
+    
     #parse ("$full_templates_path/footer.vm")
     $theme.include($body_bottom_include)
 </body>
