@@ -1,65 +1,64 @@
 <!DOCTYPE html>
-    #parse ($init)
+	#parse ($init)
 <html class="$root_css_class" dir="#language ("lang.dir")" lang="$w3c_language_id">
 <head>
-  <title>$the_title - $company_name</title>
-  <link rel="stylesheet" href="$css_folder/screen.css" type="text/css" media="screen"/>
-  <!--[if IE 8]>
-    <link rel="stylesheet" href="$css_folder/ie8.css" type="text/css" media="screen"/><![endif]-->
-  <!--[if lte IE 7]>
-    <link rel="stylesheet" href="$css_folder/ie7.css" type="text/css" media="screen"/><![endif]-->
-  <!--[if lte IE 6]>
-    <link rel="stylesheet" href="$css_folder/ie6.css" type="text/css" media="screen"/><![endif]-->
-  <link rel="stylesheet" href="$css_folder/print.css" type="text/css" media="print"/>
-  <meta content="initial-scale=1.0, width=device-width" name="viewport"/>
-    $theme.include($top_head_include)
+	<title>$the_title - $company_name</title>
+	$theme.include($top_head_include)
+	<!--[if IE 8]>
+	<link rel="stylesheet" href="$css_folder/ie8.css" type="text/css" media="screen"/><![endif]-->
+	<!--[if lte IE 7]>
+	<link rel="stylesheet" href="$css_folder/ie7.css" type="text/css" media="screen"/><![endif]-->
+	<!--[if lte IE 6]>
+	<link rel="stylesheet" href="$css_folder/ie6.css" type="text/css" media="screen"/><![endif]-->
+	<link rel="stylesheet" href="$css_folder/print.css" type="text/css" media="print"/>
+	<meta content="initial-scale=1.0, width=device-width" name="viewport"/>
 </head>
 
-<body class="home"> ##TODO make this dynamic
-    $theme.include($body_top_include)
-    #if ($permissionChecker.isOmniadmin())
-        #dockbar()
-    #end
-	<div class="container-fluid container equalize $css_class" id="global-container">
-		<header id="banner" role="banner">
-			<div id="heading" class="header">
-			  	<h1 class="branding">
-					<a class="$logo_css_class" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
-						<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width"/>
-					</a>
-					#if ($show_site_name)
-						<span class="site-name" title="#language_format ("go-to-x", [$site_name])">
+<body id="home">
+	$theme.include($body_top_include)
+	#if ($permissionChecker.isOmniadmin())
+		#dockbar()
+	#end
+<div class="$css_class" id="global-container">
+	<header id="banner" role="banner">
+		<div id="heading" class="header">
+			<h1 class="branding">
+				<a class="$logo_css_class" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
+					<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width"/>
+				</a>
+				#if ($show_site_name)
+					<span class="site-name" title="#language_format ("go-to-x", [$site_name])">
 						$site_name
-						</span>
-					#end
-			 	 </h1>
-			
-				<div class="nav_bar">
-				  #if ($has_navigation || $is_signed_in)
-				  #parse ("$full_templates_path/navigation.vm")
-				  #end
-				  #parse ("$full_templates_path/search.vm")
-				</div>
+					</span>
+				#end
+			</h1>
+
+			<div class="nav_bar">
+				#if ($has_navigation || $is_signed_in)
+					#parse ("$full_templates_path/navigation.vm")
+				#end
+				#parse ("$full_templates_path/search.vm")
 			</div>
-		</header>
-		<div class="content_wrapper1">
-			<div class="content_wrapper2" id="main-content" role="main">
-			
-			  #if ($selectable)
+		</div>
+	</header>
+	<div class="content_wrapper1">
+		<div class="content_wrapper2" id="main-content" role="main">
+
+			#if ($selectable)
 			  $theme.include($content_include)
 			  #else
-			  $portletDisplay.recycle()
-			  $portletDisplay.setTitle($the_title)
-			  $theme.wrapPortlet("portlet.vm", $content_include)
-			  #end
-			</div>
-				
+				$portletDisplay.recycle()
+				$portletDisplay.setTitle($the_title)
+				$theme.wrapPortlet("portlet.vm", $content_include)
+			#end
 		</div>
-		#parse ("$full_templates_path/service_menu.vm")
+
 	</div>
-    
-    #parse ("$full_templates_path/footer.vm")
-    $theme.include($body_bottom_include)
+	#parse ("$full_templates_path/service_menu.vm")
+</div>
+
+	#parse ("$full_templates_path/footer.vm")
+	$theme.include($body_bottom_include)
 </body>
-    $theme.include($bottom_include)
+	$theme.include($bottom_include)
 </html>
