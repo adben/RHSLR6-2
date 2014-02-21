@@ -192,4 +192,3 @@
 .violet .box.closed.contrast h6 { background-color: #becdc3; }
 .violet .box.closed.contrast { background-color: #dfe6e1; border: 1px solid #becdc3; }
 
-@import url("common.css");

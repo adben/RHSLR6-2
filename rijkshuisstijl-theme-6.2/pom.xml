@@ -89,7 +89,7 @@
 		</dependency>
 	</dependencies>
 	<properties>
-		<liferay.theme.parent>_styled</liferay.theme.parent>
+		<liferay.theme.parent>_unstyled</liferay.theme.parent>
 		<liferay.theme.type>vm</liferay.theme.type>
 		<liferay.version>${liferay-maven-plugin.version}</liferay.version>
 		<liferay.auto.deploy.dir>${env.LIFERAY_HOME}/deploy</liferay.auto.deploy.dir>

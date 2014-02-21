@@ -16,9 +16,6 @@
 
 <body id="home">
 	$theme.include($body_top_include)
-	#if ($permissionChecker.isOmniadmin())
-		#dockbar()
-	#end
 <div class="$css_class" id="global-container">
 	<div class="header">
 		<span></span>
