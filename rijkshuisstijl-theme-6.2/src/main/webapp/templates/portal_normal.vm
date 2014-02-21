@@ -20,27 +20,28 @@
 		#dockbar()
 	#end
 <div class="$css_class" id="global-container">
-	<header id="banner" role="banner">
-		<div id="heading" class="header">
-			<h1 class="branding">
-				<a class="$logo_css_class" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
-					<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width"/>
-				</a>
-				#if ($show_site_name)
-					<span class="site-name" title="#language_format ("go-to-x", [$site_name])">
-						$site_name
-					</span>
-				#end
-			</h1>
+	<div class="header">
+		<span></span>
 
-			<div class="nav_bar">
-				#if ($has_navigation || $is_signed_in)
-					#parse ("$full_templates_path/navigation.vm")
-				#end
-				#parse ("$full_templates_path/search.vm")
-			</div>
+		<h1 class="branding">
+			<a class="$logo_css_class" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
+				<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width"/>
+			</a>
+			#if ($show_site_name)
+				<span class="site-name" title="#language_format ("go-to-x", [$site_name])">
+					$site_name
+				</span>
+			#end
+		</h1>
+
+		<div class="nav_bar">
+			#if ($has_navigation)
+				#parse ("$full_templates_path/navigation.vm")
+			#end
+			#parse ("$full_templates_path/search.vm")
 		</div>
-	</header>
+	</div>
+
 	<div class="content_wrapper1">
 		<div class="content_wrapper2" id="main-content" role="main">
 

@@ -1,7 +1,36 @@
+###set ($layoutService = $serviceLocator.findService('com.liferay.portal.service.LayoutLocalService') )
+###set ($selectedPageGroup = $groupLocalService.getGroup($themeDisplay.getCompanyId(),"Guest") )
+###set($pageLayout=$layoutService.getFriendlyURLLayout($selectedPageGroup.getGroupId(),false,"/search"))
+###set($plid=$pageLayout.getPlid())
+###set ($my_sites_portlet_url = $portletURLFactory.create($request, "3", $plid, "RENDER_PHASE"))
+
 <div class="search">
-    $theme.search()
-	<ul>
-		<li class="advanced_search"><a href="#" title="Uitgebreid zoeken">Uitgebreid zoeken</a></li>
-		<li class="sitemap"><a href="#" title="Sitemap">Sitemap</a></li>
-	</ul>
+##	<form onsubmit="ctem_3_search(); return false;" name="ctem_3_fm" method="get" action="$my_sites_portlet_url">
+##		<input type="hidden" value="maximized" name="p_p_state">
+##		<input type="hidden" value="view" name="p_p_mode">
+##		<input type="hidden" value="/search/search" name="_3_struts_action">
+##		<input type="hidden" value="$themeDisplay.getURLCurrent()" name="_3_redirect">
+##		<input type="hidden" value="0" name="_3_groupId">
+##		<input type="text" class="text" name="zoek_trefwoord" id="zoek_trefwoord">
+##		<input type="submit" name="submit" value="zoek" class="submit">
+##	</form>
+##</div>
+	$theme.journalContentSearch()
 </div>
+
+
+##<div class="search">
+##
+##	<form method="post" action="$zoekenURL" name="ABC" id="zoeken" onsubmit="submitForm(this); return false;">
+##		<fieldset>
+##			<legend>Zoeken</legend>
+##			<ol>
+##				<li>
+##					<label for="zoek_trefwoord">Zoek trefwoord</label>
+##					<input type="text" class="text" name="zoek_trefwoord" id="zoek_trefwoord">
+##					<input type="submit" name="submit" value="zoek" class="submit">
+##				</li>
+##			</ol>
+##		</fieldset>
+##	</form>
+##</div>
