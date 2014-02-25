@@ -1,1 +1,6 @@
 #set ($css_class = "${css_class} container equalize dockbar-split container-fluid")
+#set ($is_home = $layout.getExpandoBridge().getAttribute("is-home-page"))
+#set ($bodyId = "content")
+#if ($is_home) 
+	#set ($bodyId = "home")
+#end
