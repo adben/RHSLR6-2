@@ -14,7 +14,10 @@
 	<meta content="initial-scale=1.0, width=device-width" name="viewport"/>
 </head>
 
-<body id="home">
+
+
+
+<body id="$bodyId">
 	$theme.include($body_top_include)
 <div class="$css_class" id="global-container">
 	<div class="header">
@@ -41,14 +44,22 @@
 
 	<div class="content_wrapper1">
 		<div class="content_wrapper2" id="main-content" role="main">
-
-			#if ($selectable)
-			  $theme.include($content_include)
-			  #else
-				$portletDisplay.recycle()
-				$portletDisplay.setTitle($the_title)
-				$theme.wrapPortlet("portlet.vm", $content_include)
-			#end
+			<div class="content">
+				#if (!$is_home)
+					#parse ("$full_templates_path/breadcrumb.vm")
+				#end	
+				#if ($selectable)
+				  $theme.include($content_include)
+				  #else
+					$portletDisplay.recycle()
+					$portletDisplay.setTitle($the_title)
+					$theme.wrapPortlet("portlet.vm", $content_include)
+				#end
+				#if (!$is_home)
+					#parse ("$full_templates_path/sub_navigation.vm")
+				#end
+				
+			</div>
 		</div>
 
 	</div>

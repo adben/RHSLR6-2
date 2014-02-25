@@ -3,16 +3,16 @@
 
 <layout-templates>
 	<custom>		
-		<layout-template id="home"
-			name="home">
+		<layout-template id="rijkshuisstijl211kolomcombinatie"
+			name="rijkshuisstijl211kolomcombinatie">
 			<template-path>
-				/home.tpl		
+				/rijkshuisstijl211kolomcombinatie.tpl		
 			</template-path>
 			<wap-template-path>
-				/home.wap.tpl
+				/rijkshuisstijl211kolomcombinatie.wap.tpl
 			</wap-template-path>
 			<thumbnail-path>
-				/home.png
+				/rijkshuisstijl211kolomcombinatie.png
 			</thumbnail-path>
 		</layout-template>
 	</custom>
