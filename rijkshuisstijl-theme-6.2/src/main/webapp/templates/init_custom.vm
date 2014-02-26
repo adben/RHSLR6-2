@@ -4,3 +4,8 @@
 #if ($is_home) 
 	#set ($bodyId = "home")
 #end
+#set($ancestors = $layout.getAncestors())
+#set($rootAncestorLayout = $layoutService.getLayout($layout.getParentPlid()))
+#foreach ($ancestor in $ancestors)
+  #set($rootAncestorLayout = $ancestor)  
+#end
