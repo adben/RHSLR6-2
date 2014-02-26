@@ -45,6 +45,7 @@
 			<div class="content">
 				#if (!$is_home)
 					#parse ("$full_templates_path/breadcrumb.vm")
+					
 				#end	
 				#if ($selectable)
 				  $theme.include($content_include)

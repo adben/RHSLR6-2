@@ -1,6 +1,10 @@
-#set($breadcrumb = "#breadcrumbs()")
-#set($lastIndex = $breadcrumb.lastIndexOf('/') + 1 )
-  #if($lastIndex>=0)
-    #set($breadcrumb = $breadcrumb.replace('/','') )
-  #end
-$breadcrumb
+<div class="breadcrumb">
+	<p>
+		#set($ancestors = $layout.getAncestors())
+		#foreach ($ancestor in $ancestors)
+		   #set($index = $ancestors.size() - $velocityCount)
+		  <span><a title="$ancestors.get($index).getName($locale)" href="$ancestors.get($index).getFriendlyURL()"> $ancestors.get($index).getName($locale)</a> <span class="imgreplacement">›</span></span>
+		#end
+		$layout.getName($locale)
+	</p>
+</div>
