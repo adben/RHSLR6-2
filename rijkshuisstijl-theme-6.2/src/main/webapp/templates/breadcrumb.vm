@@ -1,13 +1,6 @@
-<div class="breadcrumb">
-	<p>
-		<em>U bevindt zich op: </em>
-		<span><a title="Homepagina" href="#">Home</a> <span class="imgreplacement">›</span></span>
-		<span><a title="Fugiat" href="#">Fugiat</a> <span class="imgreplacement">›</span></span>
-		<span><a title="Level 0" href="#">Level 0.3</a> <span class="imgreplacement">›</span></span>
-		<span><a title="Level 1" href="#">Level 1.2</a> <span class="imgreplacement">›</span></span>
-		<span><a title="Level 2" href="#">Level 2.1</a> <span class="imgreplacement">›</span></span>
-		<span><a title="Level 3" href="#">Level 3.3</a> <span class="imgreplacement">›</span></span>
-		<span><a title="Level 4" href="#">Level 4.3</a> <span class="imgreplacement">›</span></span>
-		Cras rutrum pulvinar tellus h1 (level 5.4)
-	</p>
-</div>
+#set($breadcrumb = "#breadcrumbs()")
+#set($lastIndex = $breadcrumb.lastIndexOf('/') + 1 )
+  #if($lastIndex>=0)
+    #set($breadcrumb = $breadcrumb.replace('/','') )
+  #end
+$breadcrumb
