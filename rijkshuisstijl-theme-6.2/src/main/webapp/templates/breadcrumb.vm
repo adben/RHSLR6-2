@@ -1,13 +1,9 @@
 <div class="breadcrumb">
-	<p>
-		<em>U bevindt zich op: </em>
-		<span><a title="Homepagina" href="#">Home</a> <span class="imgreplacement">›</span></span>
-		<span><a title="Fugiat" href="#">Fugiat</a> <span class="imgreplacement">›</span></span>
-		<span><a title="Level 0" href="#">Level 0.3</a> <span class="imgreplacement">›</span></span>
-		<span><a title="Level 1" href="#">Level 1.2</a> <span class="imgreplacement">›</span></span>
-		<span><a title="Level 2" href="#">Level 2.1</a> <span class="imgreplacement">›</span></span>
-		<span><a title="Level 3" href="#">Level 3.3</a> <span class="imgreplacement">›</span></span>
-		<span><a title="Level 4" href="#">Level 4.3</a> <span class="imgreplacement">›</span></span>
-		Cras rutrum pulvinar tellus h1 (level 5.4)
+	<p>		
+		#foreach ($ancestor in $ancestors)
+		   #set($index = $ancestors.size() - $velocityCount)
+		  <span><a title="$ancestors.get($index).getName($locale)" href="$ancestors.get($index).getFriendlyURL()"> $ancestors.get($index).getName($locale)</a> <span class="imgreplacement">›</span></span>
+		#end
+		$layout.getName($locale)
 	</p>
 </div>
